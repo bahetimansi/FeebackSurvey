@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>pom.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #080808; font-style: italic;}
+.s1 { color: #174ad4;}
+.s2 { color: #080808;}
+.s3 { color: #067d17;}
+.s4 { color: #0033b3;}
+.s5 { color: #080808;}
+.s6 { color: #8c8c8c; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+pom.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;UTF-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s2">&lt;</span><span class="s4">project </span><span class="s1">xmlns</span><span class="s3">=&quot;http://maven.apache.org/POM/4.0.0&quot; </span><span class="s1">xmlns:xsi</span><span class="s3">=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+         <span class="s1">xsi:schemaLocation</span><span class="s3">=&quot;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">modelVersion</span><span class="s2">&gt;</span><span class="s5">4.0.0</span><span class="s2">&lt;/</span><span class="s4">modelVersion</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">parent</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.springframework.boot</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">spring-boot-starter-parent</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">version</span><span class="s2">&gt;</span><span class="s5">2.7.8</span><span class="s2">&lt;/</span><span class="s4">version</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">relativePath</span><span class="s2">/&gt; </span><span class="s6">&lt;!-- lookup parent from repository --&gt;</span>
+    <span class="s2">&lt;/</span><span class="s4">parent</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">com.user.student</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">StudentService</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">version</span><span class="s2">&gt;</span><span class="s5">0.0.1-SNAPSHOT</span><span class="s2">&lt;/</span><span class="s4">version</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">name</span><span class="s2">&gt;</span><span class="s5">SchoolManagementSystem</span><span class="s2">&lt;/</span><span class="s4">name</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">description</span><span class="s2">&gt;</span><span class="s5">This is Student service</span><span class="s2">&lt;/</span><span class="s4">description</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">properties</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">java.version</span><span class="s2">&gt;</span><span class="s5">1.8</span><span class="s2">&lt;/</span><span class="s4">java.version</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">apache.commons.lang3.version</span><span class="s2">&gt;</span><span class="s5">3.4</span><span class="s2">&lt;/</span><span class="s4">apache.commons.lang3.version</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">junit.version</span><span class="s2">&gt;</span><span class="s5">4.12</span><span class="s2">&lt;/</span><span class="s4">junit.version</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;/</span><span class="s4">properties</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">dependencies</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.springframework.boot</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">spring-boot-starter-data-jpa</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">com.h2database</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">h2</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">scope</span><span class="s2">&gt;</span><span class="s5">runtime</span><span class="s2">&lt;/</span><span class="s4">scope</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.springframework.boot</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">spring-boot-starter-web</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">exclusions</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">exclusion</span><span class="s2">&gt;</span>
+                    <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.springframework.boot</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+                    <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">spring-boot-starter-logging</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;/</span><span class="s4">exclusion</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;/</span><span class="s4">exclusions</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.springframework.boot</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">spring-boot-starter-log4j2</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.postgresql</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">postgresql</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">scope</span><span class="s2">&gt;</span><span class="s5">runtime</span><span class="s2">&lt;/</span><span class="s4">scope</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.projectlombok</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">lombok</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">optional</span><span class="s2">&gt;</span><span class="s5">true</span><span class="s2">&lt;/</span><span class="s4">optional</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.springframework.boot</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">spring-boot-starter-test</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">scope</span><span class="s2">&gt;</span><span class="s5">test</span><span class="s2">&lt;/</span><span class="s4">scope</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">javax.validation</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">validation-api</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.springframework.boot</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">spring-boot-starter-validation</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">com.fasterxml.jackson.core</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">jackson-annotations</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">com.fasterxml.jackson.core</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">jackson-databind</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">com.fasterxml.jackson.datatype</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">jackson-datatype-joda</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">com.fasterxml.jackson.datatype</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">jackson-datatype-jdk8</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">com.fasterxml.jackson.datatype</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">jackson-datatype-jsr310</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.apache.commons</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">commons-lang3</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">version</span><span class="s2">&gt;</span><span class="s5">${apache.commons.lang3.version}</span><span class="s2">&lt;/</span><span class="s4">version</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.liquibase</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">liquibase-core</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">version</span><span class="s2">&gt;</span><span class="s5">4.22.0</span><span class="s2">&lt;/</span><span class="s4">version</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.jetbrains</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">annotations</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">version</span><span class="s2">&gt;</span><span class="s5">RELEASE</span><span class="s2">&lt;/</span><span class="s4">version</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">scope</span><span class="s2">&gt;</span><span class="s5">compile</span><span class="s2">&lt;/</span><span class="s4">scope</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">io.rest-assured</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">rest-assured</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">version</span><span class="s2">&gt;</span><span class="s5">3.3.0</span><span class="s2">&lt;/</span><span class="s4">version</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">scope</span><span class="s2">&gt;</span><span class="s5">test</span><span class="s2">&lt;/</span><span class="s4">scope</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">junit</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">junit</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">version</span><span class="s2">&gt;</span><span class="s5">${junit.version}</span><span class="s2">&lt;/</span><span class="s4">version</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">scope</span><span class="s2">&gt;</span><span class="s5">test</span><span class="s2">&lt;/</span><span class="s4">scope</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">dependency</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;/</span><span class="s4">dependencies</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;</span><span class="s4">build</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;</span><span class="s4">plugins</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;</span><span class="s4">plugin</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.springframework.boot</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">spring-boot-maven-plugin</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;</span><span class="s4">configuration</span><span class="s2">&gt;</span>
+                    <span class="s2">&lt;</span><span class="s4">excludes</span><span class="s2">&gt;</span>
+                        <span class="s2">&lt;</span><span class="s4">exclude</span><span class="s2">&gt;</span>
+                            <span class="s2">&lt;</span><span class="s4">groupId</span><span class="s2">&gt;</span><span class="s5">org.projectlombok</span><span class="s2">&lt;/</span><span class="s4">groupId</span><span class="s2">&gt;</span>
+                            <span class="s2">&lt;</span><span class="s4">artifactId</span><span class="s2">&gt;</span><span class="s5">lombok</span><span class="s2">&lt;/</span><span class="s4">artifactId</span><span class="s2">&gt;</span>
+                        <span class="s2">&lt;/</span><span class="s4">exclude</span><span class="s2">&gt;</span>
+                    <span class="s2">&lt;/</span><span class="s4">excludes</span><span class="s2">&gt;</span>
+                <span class="s2">&lt;/</span><span class="s4">configuration</span><span class="s2">&gt;</span>
+            <span class="s2">&lt;/</span><span class="s4">plugin</span><span class="s2">&gt;</span>
+        <span class="s2">&lt;/</span><span class="s4">plugins</span><span class="s2">&gt;</span>
+    <span class="s2">&lt;/</span><span class="s4">build</span><span class="s2">&gt;</span>
+<span class="s2">&lt;/</span><span class="s4">project</span><span class="s2">&gt;</span></pre>
+</body>
+</html>
